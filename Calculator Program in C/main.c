@@ -4,12 +4,13 @@
 int main()
 {
     float a, b, c, delta, result, result2, base, expoente, num1, num2, delta1, cateto1, cateto2, catetot, hipotenusa, hipotenusa1;
-    int op, ndv, opc;
+    int op, ndv, opc, tot;
 
     printf("do you want make what?\n1 - pitagoras\n2 - baskhara\n3 - rad or pot\n4 - 'normal'\ninsert: ");
     scanf("\n%d", &opc);
 
-    //começo da programação vou fazer o baskhara
+    //comeï¿½o da programaï¿½ï¿½o vou fazer o baskhara
+    while (tot == 0) {
     while (opc == 2) {
         printf("first, insert the a, b and c: (if you don't know, a is together the x^2; b is together x and c is the number alone)\n");
         printf("digite a: ");
@@ -58,7 +59,7 @@ int main()
             scanf("\n%d", &opc);
         }
     }
-    //lest goooo tamo indo firme e forte agr é rad e pot (facil)
+    //lest goooo tamo indo firme e forte agr ï¿½ rad e pot (facil)
     while (opc == 3) {
         printf("do you want make potentiation or rooting: (1 to potentiation or 2 to rooting)\n");
         printf("your chose: ");
@@ -86,7 +87,7 @@ int main()
             scanf("\n%d", &opc);
         }
     }
-    //esse aqui é gambiarra mas fds nn gosto de fazer isso
+    //esse aqui ï¿½ gambiarra mas fds nn gosto de fazer isso
     while (opc == 4) {
         printf("1 - ad, 2 - minus, 3 - mult, 4 - div\n");
         printf("how many numbers do you want: ");
@@ -134,13 +135,15 @@ int main()
         }
     while (opc == 9) {
         printf("do you want continue: 1 - yes and 2 - no\n");
-        scanf("\n%d", &ndv);
-        if (ndv == 2) {
+        scanf("\n%d", &tot);
+        if (tot == 2) {
                 return 0;
         }
-        if (ndv == 1) {
+        if (tot == 1) {
             printf("do you want make what?\n1 - pitagoras\n2 - baskhara\n3 - rad or pot\n4 - 'normal'\ninsert: ");
             scanf("\n%d", opc);
+            tot = 0
         }
     }
+}
 }
